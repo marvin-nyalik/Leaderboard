@@ -71,3 +71,21 @@ form button {
   border: 2px solid grey;
   height: 5vh;
 }
+
+#gameId {
+  outline: none;
+  border: none;
+  width: 40%;
+}
+
+#gameId::placeholder {
+  font-style: italic;
+}
+
+.add-game {
+  width: 25%;
+  height: 5vh;
+  cursor: pointer;
+  margin: 20px 0;
+  border: 2px solid grey;
+}
