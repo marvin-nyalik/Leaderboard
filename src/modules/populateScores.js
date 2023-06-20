@@ -1,10 +1,12 @@
-import { scoreList, allScores as all } from './scoreObject.js';
+import { scoreList } from './scoreObject.js';
+import { getGameScores } from './gameAPI.js';
 
-const populateScores = () => {
+const populateScores = async () => {
+  const allResponses = await getGameScores();
   scoreList.innerHTML = '';
-  all.forEach((scr) => {
+  allResponses.forEach((scr) => {
     const listItem = `
-        <li> ${scr.name}: ${scr.score}</li>
+        <li> ${scr.user}: ${scr.score}</li>
         `;
     scoreList.innerHTML += listItem;
   });
