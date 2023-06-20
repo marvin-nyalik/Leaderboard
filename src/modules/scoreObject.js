@@ -2,7 +2,7 @@ import * as dom from './domElements.js';
 
 class Score {
   constructor(name, score) {
-    this.name = name;
+    this.user = name;
     this.score = score;
   }
 }
