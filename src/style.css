@@ -12,7 +12,7 @@ body {
   color: #fefefe;
 }
 
-h3{
+h3 {
   color: #1f30ad;
 }
 
@@ -34,7 +34,7 @@ h1 {
   border-radius: 5px;
   width: 5rem;
   height: 5vh;
-  transition: 1sec ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 #refresh:hover {
@@ -97,7 +97,6 @@ h1 {
 
 .user-score {
   flex: 1;
-  font-weight: 500;
   color: rgba(21, 43, 208, 0.98);
   font-weight: 600;
 }
@@ -157,7 +156,7 @@ form button {
   border-radius: 5px;
   width: 5rem;
   height: 7vh;
-  transition: 1sec ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 #submitScore:hover {
