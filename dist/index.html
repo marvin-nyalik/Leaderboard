@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Leaderboard Project</title>
 <script defer src="main.js"></script></head>
 <body>
@@ -23,10 +24,12 @@
         <div class="new-score">
             <h3>Add Your Score</h3>
             <form action="#">
-                <input type="text" placeholder="Your name here..." name="name" id="name">
-                <input type="number" placeholder="Your score here..." name="score" id="score">
+                <input type="text" placeholder="Your name here..." 
+                name="name" id="name" required>
+                <input type="number" placeholder="Your score here..."
+                 name="score" id="score" required>
                 <div class="footer">
-                    <button type="button" id="submitScore" class="btn">Submit</button>
+                    <button type="submit" id="submitScore" class="btn">Submit</button>
                 </div>
             </form>
         </div>
