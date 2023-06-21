@@ -2,22 +2,49 @@
 
 body {
   font-family: poppins, Arial, Helvetica, sans-serif;
+  background-color: #53848f;
 }
 
 .showcase {
   display: flex;
   width: 80%;
   margin: 2rem auto;
+  color: #fefefe;
+}
+
+h3{
+  color: #1f30ad;
 }
 
 h1 {
-  margin-left: 2rem;
+  color: #000;
+  display: flex;
+  justify-content: center;
 }
 
 .recent-scores {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
+}
+
+#refresh {
+  color: #6108d4;
+  border: 2px solid #43e67c;
+  border-radius: 5px;
+  width: 5rem;
+  height: 5vh;
+  transition: 1sec ease-in-out;
+}
+
+#refresh:hover {
+  transform: scale(0.95);
+}
+
+#refresh:active {
+  background-color: #430675;
+  color: white;
+  border-color: #d40fc0;
 }
 
 .refresh {
@@ -34,6 +61,12 @@ h1 {
   align-items: center;
 }
 
+.scores-table {
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid rgb(153, 242, 217, 0.3);
+}
+
 .scores-list {
   list-style-type: none;
   display: flex;
@@ -46,12 +79,31 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.scores-list:nth-child(even) {
-  background-color: grey;
+.list-item {
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-start;
+  background: #529e8e;
+  border-radius: 5px;
+  color: #fefefe;
+}
+
+.user-name {
+  flex: 2;
+  margin-left: 0.3rem;
+  color: rgb(31, 48, 173, 0.9);
+  font-weight: 600;
+}
+
+.user-score {
+  flex: 1;
+  font-weight: 500;
+  color: rgba(21, 43, 208, 0.98);
+  font-weight: 600;
 }
 
 .new-score {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -64,6 +116,15 @@ h1 {
 
 form input {
   margin-bottom: 1.2rem;
+  outline: none;
+  background: #99f2d9;
+  border: none;
+  height: 5vh;
+  border-radius: 7px;
+}
+
+form input::placeholder {
+  font-style: italic;
 }
 
 form button {
@@ -88,4 +149,23 @@ form button {
   cursor: pointer;
   margin: 20px 0;
   border: 2px solid grey;
+}
+
+#submitScore {
+  color: #6108d4;
+  border: 2px solid #43e67c;
+  border-radius: 5px;
+  width: 5rem;
+  height: 7vh;
+  transition: 1sec ease-in-out;
+}
+
+#submitScore:hover {
+  transform: scale(0.95);
+}
+
+#submitScore:active {
+  background-color: #430675;
+  color: white;
+  border-color: #d40fc0;
 }
