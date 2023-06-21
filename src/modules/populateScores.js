@@ -6,7 +6,10 @@ const populateScores = async () => {
   scoreList.innerHTML = '';
   allResponses.forEach((scr) => {
     const listItem = `
-        <li> ${scr.user}: ${scr.score}</li>
+        <li class="list-item"> 
+          <span class="user-name"> ${scr.user}</span>
+          <span class="user-score"> ${scr.score} </span>
+        </li>
         `;
     scoreList.innerHTML += listItem;
   });
