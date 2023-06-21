@@ -58,7 +58,7 @@ This project is entirely built with HTML ,CSS and JavaScript.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-The live version of this project <a href="https://marvin-nyalik.github.io/NyalikPortfolio/">`will be introduced before the 23rd June, 2023</a>`
+The live version of this project `will be introduced before the 23rd June, 2023</a>`
 
 ## 💻 Getting Started <a name="getting-started"></a>
 To get a local copy up and running, follow these steps.
