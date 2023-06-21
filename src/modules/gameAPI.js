@@ -15,9 +15,7 @@ const getGameScores = async () => {
   const response = await fetch(scoresEndpoint);
   const data = await response.json();
   const myResponses = data.result;
-  return myResponses.sort((a, b) => {
-    return b.score - a.score;
-  });
+  return myResponses.sort((a, b) => b.score - a.score);
 };
 
 const sendScore = async () => {
