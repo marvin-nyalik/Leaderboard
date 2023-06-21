@@ -73,6 +73,8 @@ h1 {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  height: 65vh;
+  overflow-y: scroll;
 }
 
 .scores-list li {
@@ -89,7 +91,7 @@ h1 {
 }
 
 .user-name {
-  flex: 2;
+  flex: 4;
   margin-left: 0.3rem;
   color: rgb(31, 48, 173, 0.9);
   font-weight: 600;
@@ -99,6 +101,14 @@ h1 {
   flex: 1;
   color: rgba(21, 43, 208, 0.98);
   font-weight: 600;
+}
+
+.bx {
+  color: gold;
+}
+
+#user-0 {
+  color: #fff;
 }
 
 .new-score {
