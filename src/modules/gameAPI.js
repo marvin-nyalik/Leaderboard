@@ -22,17 +22,19 @@ const sendScore = async () => {
   const name = nameInput.value;
   const score = scoreInput.value;
   const isNotANumber = Number.isNaN(score);
+  const newScore = new Score(name, score);
+  const config = 
+  {
+    method: 'POST',
+    body: JSON.stringify(newScore),
+    headers: {
+      'Content-type': 'application/json',
+    }
+  }
 
   const isGreaterLess = score > 0 || score < 0 || score === 0;
   if (name !== '' && !isNotANumber && isGreaterLess) {
-    const newScore = new Score(name, score);
-    await fetch(scoresEndpoint, {
-      method: 'POST',
-      body: JSON.stringify(newScore),
-      headers: {
-        'Content-type': 'application/json',
-      },
-    })
+    await fetch(scoresEndpoint, config)
       .then((response) => { response.json(); });
   }
 
