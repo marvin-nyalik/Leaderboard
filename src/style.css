@@ -178,3 +178,49 @@ form button {
   color: white;
   border-color: #d40fc0;
 }
+
+@media screen and (max-width: 768px) {
+  .showcase {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .recent-scores {
+    width: 100%;
+  }
+
+  .new-score {
+    width: 100%;
+    order: -1;
+  }
+
+  .new-score form {
+    width: 90%;
+  }
+
+  #submitScore {
+    height: 6vh;
+  }
+
+  .scores-headline {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0.9rem;
+  }
+
+  #refresh {
+    margin: 0;
+    height: 6vh;
+  }
+
+  .scores-table {
+    width: 100%;
+  }
+
+  .scores-list {
+    width: 100%;
+  }
+}
