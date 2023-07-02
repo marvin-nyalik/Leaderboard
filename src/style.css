@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  background-color: #53848f;
+}
+
+.showcase {
+  display: flex;
+  width: 80%;
+  margin: 2rem auto;
+  color: #fefefe;
+}
+
+h3 {
+  color: #1f30ad;
+}
+
+h1 {
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#refresh {
+  color: #6108d4;
+  border: 2px solid #43e67c;
+  border-radius: 5px;
+  width: 5rem;
+  height: 5vh;
+  transition: 0.5s ease-out;
+}
+
+#refresh:hover {
+  transform: scale(0.95);
+}
+
+#refresh:active {
+  background-color: #430675;
+  color: white;
+  border-color: #d40fc0;
+}
+
+.refresh {
+  height: 5vh;
+  margin-left: 2rem;
+  border: 2px solid grey;
+  cursor: pointer;
+  margin-right: 10%;
+}
+
+.scores-headline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.scores-table {
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid rgb(153, 242, 217, 0.3);
+}
+
+.scores-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 65vh;
+  overflow-y: scroll;
+}
+
+.scores-list li {
+  margin-bottom: 0.5rem;
+}
+
+.list-item {
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-start;
+  background: #529e8e;
+  border-radius: 5px;
+  color: #fefefe;
+}
+
+.user-name {
+  flex: 4;
+  margin-left: 0.3rem;
+  color: rgb(31, 48, 173, 0.9);
+  font-weight: 600;
+}
+
+.user-score {
+  flex: 1;
+  color: rgba(21, 43, 208, 0.98);
+  font-weight: 600;
+}
+
+.bx {
+  color: gold;
+}
+
+#user-0 {
+  color: #fff;
+}
+
+.new-score {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-score form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+form input {
+  margin-bottom: 1.2rem;
+  outline: none;
+  background: #99f2d9;
+  border: none;
+  height: 5vh;
+  border-radius: 7px;
+}
+
+form input::placeholder {
+  font-style: italic;
+}
+
+form button {
+  cursor: pointer;
+  border: 2px solid grey;
+  height: 5vh;
+}
+
+#gameId {
+  outline: none;
+  border: none;
+  width: 40%;
+}
+
+#gameId::placeholder {
+  font-style: italic;
+}
+
+.add-game {
+  width: 25%;
+  height: 5vh;
+  cursor: pointer;
+  margin: 20px 0;
+  border: 2px solid grey;
+}
+
+#submitScore {
+  color: #6108d4;
+  border: 2px solid #43e67c;
+  border-radius: 5px;
+  width: 5rem;
+  height: 7vh;
+  transition: 1s ease-out;
+}
+
+#submitScore:hover {
+  transform: scale(0.95);
+}
+
+#submitScore:active {
+  background-color: #430675;
+  color: white;
+  border-color: #d40fc0;
+}
+
+@media screen and (max-width: 768px) {
+  .showcase {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .recent-scores {
+    width: 100%;
+  }
+
+  .new-score {
+    width: 100%;
+    order: -1;
+  }
+
+  .new-score form {
+    width: 90%;
+  }
+
+  #submitScore {
+    height: 6vh;
+  }
+
+  .scores-headline {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0.9rem;
+  }
+
+  #refresh {
+    margin: 0;
+    height: 6vh;
+  }
+
+  .scores-table {
+    width: 100%;
+  }
+
+  .scores-list {
+    width: 100%;
+  }
+}
