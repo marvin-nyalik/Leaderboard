@@ -107,7 +107,7 @@ In order to run this project you need:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](../../issues/). Open a New Issue and I'll look intently into your suggestions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
